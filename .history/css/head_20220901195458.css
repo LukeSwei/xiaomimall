@@ -47,6 +47,7 @@
     position: relative;
     bottom: 0;
     background-color: #222; 
+    overflow-x:visible
 }
 
 .last_buttom ::before{

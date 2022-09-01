@@ -1,0 +1,9 @@
+#container{
+    margin-top: 40px;
+    position: relative;
+}
+#contact{
+    font-size: px;
+    border-bottom: 2px solid red;
+    margin-left: 25%;
+}
