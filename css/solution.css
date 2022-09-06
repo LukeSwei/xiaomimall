@@ -1,0 +1,27 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+#container{
+    margin-top: 20px;
+}
+#container>span{
+    /*border-bottom: 2px solid red;*/
+    line-height: 60px;
+    display: inline-block;
+    margin-left: 22%;;
+}
+#container>a{
+    border-bottom: 2px solid red;
+    line-height: 60px;
+    display: inline-block;
+    margin : 0 20px;
+    font-size: 18px;
+}
+#iframe{
+    display: block;
+    margin:40px auto;
+    /*border: 0;*/
+    width: 70%;
+    height: 900px;
+}
