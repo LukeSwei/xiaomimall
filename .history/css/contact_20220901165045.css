@@ -1,0 +1,12 @@
+*{
+    margin: 0 auto;
+}
+#content{
+    margin-top: 20px;
+}
+#content>span{
+    border-bottom: 2px solid red;
+    line-height: 60px;
+    display: inline-block;
+    margin-left: 25%;;
+}

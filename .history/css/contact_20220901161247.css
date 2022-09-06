@@ -1,0 +1,8 @@
+#container{
+    margin-top: 100px;
+    position:relative;
+}
+#contact{
+    border-bottom: 2px solid red;
+    margin-left: 25%;
+}

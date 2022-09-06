@@ -1,0 +1,7 @@
+#container{
+    position:absolute;
+}
+#contact{
+    border-bottom: 2px solid red;
+    margin-left: 25%;
+}

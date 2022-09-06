@@ -1,0 +1,6 @@
+#content>span{
+    border-bottom: 2px solid red;
+    line-height: 5px;
+    display: inline-block;
+    margin-left: 25%;;
+}

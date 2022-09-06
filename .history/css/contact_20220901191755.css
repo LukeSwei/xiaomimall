@@ -1,0 +1,24 @@
+
+#content{
+    margin-top: 20px;
+}
+#content>span{
+    border-bottom: 2px solid red;
+    line-height: 60px;
+    display: inline-block;
+    margin-left: 22%;;
+}
+
+#map{
+    width:800px;
+    height: 200px;
+    border:1px solid red;
+    /* float:left; */
+    /* margin-top: 40px; */
+    margin-left: 22%;
+}
+#map_position>span{
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+}

@@ -76,6 +76,15 @@ function ones() {
    windows_five.style.display = "none"
    windows_six.style.display = "none"
    windows_seven.style.display = "none"
+   
+   partner_one.style.background = "#ecf0f5"
+   partner_there.style.background = "#f7f6f7"
+   partner_four.style.background = "#f7f6f7"
+   partner_five.style.background = "#f7f6f7"
+   partner_six.style.background = "#f7f6f7"
+   partner_seven.style.background = "#f7f6f7"
+   partner_eight.style.background = "#f7f6f7"
+   partner_two.style.background = "#f7f6f7"
 }
 function twos() {
    
@@ -454,8 +463,6 @@ function sevens() {
    windows_seven.style.display = "none"
 }
 function eights() {
-   
-
    partner_one.style.background = "#f7f6f7"
    partner_there.style.background = "#f7f6f7"
    partner_four.style.background = "#f7f6f7"
