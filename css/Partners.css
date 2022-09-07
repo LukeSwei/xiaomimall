@@ -38,7 +38,6 @@
 .last_buttom{
     width: 100%;
     height:452px;
-    border: 1px solid transparent; 
     background-color: #222; 
 }
 .last_buttom ::before{
@@ -161,7 +160,7 @@
 .middle{
     width: 1680px;
     height: 92px;
-    background-image: url(../img/2.png);
+    background-image: url(../img/top_img.c4c72dde.png);
     background-size: cover;
     margin: auto;
 
