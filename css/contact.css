@@ -12,9 +12,9 @@
 #map{
     width:870px;
     height: 600px;
-    /* border:1px solid red; */
-    /* float:left; */
-    /* margin-top: 40px; */
+    border:1px solid red;
+    float:left; 
+    margin-top: 40px;
     margin-left: 22%;
     margin-bottom: 200px;
 }

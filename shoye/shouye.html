@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>厚溥·IT</title>
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bottom.css">
+    <!-- 导入网页图标 -->
+    <link rel="icon" href="./img/favicon.ico">
+    <script src="./js/index.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <script src="./js/layer/layer.js"></script>
+    <!-- 重写alert框 -->
+    <style type="text/css">
+        #alert_box {
+            position: fixed;
+            left: 40%;
+            top: 20px;
+            width: 378px;
+            height: 48px;
+            display: none;
+        }
+
+        #alert_box dl {
+            width: 378px;
+            height: 48px;
+            /* text-align: center; */
+            font-size: 16px;
+
+            color: #ffae00;
+            background-color: #fff7e6;
+            border: solid 1px #ffeffc;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        #alert_box span {
+            display: inline-block;
+            /* border: solid 1px; */
+            position: relative;
+            top: -5px;
+        }
+
+        #alert_box dd {
+            width: 23px;
+            height: 20px;
+            margin-left: 15px;
+            margin-top: 13px;
+            /* border: solid 1px; */
+            display: inline-block;
+            background: url(./img/inedximg/!.png);
+            background-position: -3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+
+        <div class='top'>
+            <div class="logo">
+                <img src="./img/inedximg/logo.png" alt="">
+            </div>
+            <ul class="nav">
+                <li><a href="index.html">首页</a> </li>
+                <li><a href="../news.html">新闻</a> </li>
+                <li><a href="../Partners.html">合作伙伴</a> </li>
+                <li><a href="../solution.html">解决方案</a> </li>
+                <li><a href="../society.html">社会责任</a> </li>
+                <li><a href="../contact.html">联系方式</a> </li>
+                <li><a href="#">简 / 繁 / EN</a> </li>
+            </ul>
+        </div>
+        <div class="lunbo" id="box">
+            <ul class="lunbo1" id="pics">
+                <li>
+                    <img src="./img/inedximg/1643100665tdAKffBrte.png" alt="">
+                </li>
+                <li>
+                    <img src="./img/inedximg/1650446005PHJapsJHWS.png" alt="">
+                </li>
+                <li>
+                    <img src="./img/inedximg/16430120862AQbEBJ4Ga.png" alt="">
+                </li>
+            </ul>
+            <ul class="point" id="sub">
+                <li class="current" id="point1"></li>
+                <li id="point2"></li>
+                <li id="point3"></li>
+            </ul>
+        </div>
+
+        <div id="active">
+            <div>
+                <span>厚溥动态</span>
+                <span>News</span>
+            </div>
+            <ul class="news">
+                <div class="lis">
+                    <li>
+                        <div>
+                            <a href="#">2022-08-20</a>
+                        </div>
+                        <div>
+                            <a href="#">公司被认定为湖北省第二批产教融合型企业</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">2022-06-24</a>
+                        </div>
+                        <div>
+                            <a href="#">腾讯云、湖北师范大学文理学院与厚溥共建腾讯云大数据产业学院</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">2022-06-17</a>
+                        </div>
+                        <div>
+                            <a href="#">武昌首义学院、腾讯云与厚溥共建腾讯云产业学院</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="lis">
+                    <li>
+                        <div>
+                            <a href="#">2022-04-12</a>
+                        </div>
+                        <div>
+                            <a href="#">厚溥被认定为省级专精特新“小巨人”企业</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">2022-04-09</a>
+                        </div>
+                        <div>
+                            <a href="#">厚溥成为腾讯1+X微信小程序认证全国技术服务商</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">2022-02-23</a>
+                        </div>
+                        <div>
+                            <a href="#">湖北文理学院理工学院、腾讯云与厚溥三方成立腾讯云产业学院</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="lis">
+                    <li>
+                        <div>
+                            <a href="#">2022-01-24</a>
+                        </div>
+                        <div>
+                            <a href="#">厚溥被认定为"国家鼓励的软件企业"</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">2020-12-03</a>
+                        </div>
+                        <div>
+                            <a href="#">公司首家产业学院揭牌</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">2022-11-25</a>
+                        </div>
+                        <div>
+                            <a href="#">教育部评估专家莅临公司指导</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="lis">
+                    <li>
+                        <div>
+                            <a href="#">2020-12-03</a>
+                        </div>
+                        <div>
+                            <a href="#">公司首家产业学院揭牌</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">2022-01-24</a>
+                        </div>
+                        <div>
+                            <a href="#">厚溥被认定为"国家鼓励的软件企业"</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">2022-11-25</a>
+                        </div>
+                        <div>
+                            <a href="#">教育部评估专家莅临公司指导</a>
+                        </div>
+                    </li>
+                </div>
+
+                <div id="line">
+
+                </div>
+                <div class="btn">
+                    <button onclick="down()"> {{left}} </button>
+                    <button onclick="add()" id="button1"> {{right}} </button>
+                </div>
+            </ul>
+        </div>
+        <div class="solution">
+            <div class="solutionimg">
+                <img src="./img/inedximg/1642778716ds3GrBdGnx.png" alt="">
+            </div>
+            <ul class="sol">
+                <li>
+                    <span>01</span>
+                    <span>IT产品研发</span>
+                </li>
+                <li>
+                    <span>02</span>
+                    <span>IT培训</span>
+                </li>
+                <li>
+                    <span>03</span>
+                    <span>IT人力资源服务</span>
+                </li>
+                <li>
+                    <span>04</span>
+                    <span id="lastspan">IT创业孵化</span>
+                </li>
+            </ul>
+
+            <div class="point2">
+
+            </div>
+        </div>
+        <div class="partner">
+            <div class="partner_text">
+                <span>合作伙伴</span>
+                <span>Cooperative partner</span>
+            </div>
+            <ul class="partner_img">
+                <div class="imglis" id="imglis1">
+                    <li><img src="./img/inedximg/whdx.png" alt=""></li>
+                    <li><img src="./img/inedximg/zsyh.png" alt=""></li>
+                    <li><img src="./img/inedximg/whwl.png" alt=""></li>
+                    <li><img src="./img/inedximg/whgydx.png" alt=""></li>
+                    <li><img src="./img/inedximg/jdwl.png" alt=""></li>
+                    <li><img src="./img/inedximg/cjdx.png" alt=""></li>
+
+                    <li><img src="./img/inedximg/whncsyyh.png" alt=""></li>
+                    <li><img src="./img/inedximg/whzyjsxy.png" alt=""></li>
+                    <li><img src="./img/inedximg/gzpa.png" alt=""></li>
+                    <li><img src="./img/inedximg/aly.png" alt=""></li>
+                    <li><img src="./img/inedximg/zjtd.png" alt=""></li>
+                    <li><img src="./img/inedximg/tx.png" alt=""></li>
+                </div>
+                <div class="imglis">
+                    <li><img src="./img/inedximg/zsyh.png" alt=""></li>
+                    <li><img src="./img/inedximg/whwl.png" alt=""></li>
+                    <li><img src="./img/inedximg/jdwl.png" alt=""></li>
+                    <li><img src="./img/inedximg/whdx.png" alt=""></li>
+                    <li><img src="./img/inedximg/cjdx.png" alt=""></li>
+                    <li><img src="./img/inedximg/whgydx.png" alt=""></li>
+
+                    <li><img src="./img/inedximg/tx.png" alt=""></li>
+                    <li><img src="./img/inedximg/whzyjsxy.png" alt=""></li>
+                    <li><img src="./img/inedximg/gzpa.png" alt=""></li>
+                    <li><img src="./img/inedximg/whncsyyh.png" alt=""></li>
+                    <li><img src="./img/inedximg/zjtd.png" alt=""></li>
+                    <li><img src="./img/inedximg/aly.png" alt=""></li>
+                </div>
+                <div class="imglis">
+                    <li><img src="./img/inedximg/whgydx.png" alt=""></li>
+                    <li><img src="./img/inedximg/whwl.png" alt=""></li>
+                    <li><img src="./img/inedximg/jdwl.png" alt=""></li>
+                    <li><img src="./img/inedximg/cjdx.png" alt=""></li>
+                    <li><img src="./img/inedximg/zjtd.png" alt=""></li>
+                    <li><img src="./img/inedximg/whdx.png" alt=""></li>
+
+                    <li><img src="./img/inedximg/whzyjsxy.png" alt=""></li>
+                    <li><img src="./img/inedximg/gzpa.png" alt=""></li>
+                    <li><img src="./img/inedximg/whncsyyh.png" alt=""></li>
+                    <li><img src="./img/inedximg/tx.png" alt=""></li>
+                    <li><img src="./img/inedximg/zsyh.png" alt=""></li>
+                    <li><img src="./img/inedximg/aly.png" alt=""></li>
+                </div>
+                <div class="imglis" style="border: 1px transparent;">
+                    <li><img src="./img/inedximg/whgydx.png" alt=""></li>
+                    <li><img src="./img/inedximg/whwl.png" alt=""></li>
+                    <li><img src="./img/inedximg/jdwl.png" alt=""></li>
+
+                    <li><img src="./img/inedximg/zsyh.png" alt=""></li>
+                    <li><img src="./img/inedximg/aly.png" alt=""></li>
+                </div>
+
+
+            </ul>
+            <div class="btn">
+                <button onclick="downimg()"> {{left}} </button>
+                <button onclick="addimg()"> {{right}} </button>
+            </div>
+
+            <div class="more">
+                <div class="more_text">
+                    <a href="partnerView.html">
+                        <span>MORE</span>
+                        <img src="./img/inedximg/you.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 联系我们 -->
+        <div class="compony">
+            <div class="partner_text lianxi">
+                <span>联系我们</span>
+                <span>Company Address</span>
+            </div>
+            <div class="compony_img">
+                <img src="./img/inedximg/map.220625b8.png">
+            </div>
+            <div class="map">
+                <ul class="map_ul">
+                    <div class="map_address">
+                        <li onclick="addMap0()">
+                            <img src="./img/inedximg/dian.png" alt="">
+                            <p>湖北<span class="dian">·</span>武汉</span>
+                            <p> 洪山区关山大道特1号光谷软件园D8栋 </span>
+                        </li>
+                        <li onclick="addMap1()">
+                            <img src="./img/inedximg/dian.png" alt="">
+                            <p>湖北<span class="dian">·</span>武汉</span>
+                            <p> 东湖高新开发区春和路花山软件新城二期B13栋</span>
+                        </li>
+                        <button class="map_right" onclick="addMap()">{{right}} </button>
+                    </div>
+                    <div class="map_address">
+                        <li onclick="addMap2()">
+                            <img src="./img/inedximg/dian.png" alt="">
+                            <p>江苏<span class="dian">·</span>扬州</span>
+                            <p> 江都区龙诚路174号 </span>
+                        </li>
+
+                        <button class="map_left" onclick="downMap()"> {{left}} </button>
+                        <button class="map_right" onclick="addMap()">{{right}} </button>
+                    </div>
+                    <div class="map_address">
+                        <li onclick="addMap3()">
+                            <img src="./img/inedximg/dian.png" alt="">
+                            <p>陕西<span class="dian">·</span>西安</span>
+                            <p> 高新区西安国家数字出版基地B栋404、405室 </span>
+                        </li>
+
+                        <button class="map_left" onclick="downMap()"> {{left}} </button>
+                    </div>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- 底部 -->
+        <div id="bottom">
+            <div class="bottom_container">
+                <div class="bottom_top">
+                    <div class="bottom_top_left">
+                        <p>314215774@qq.com</p>
+                        <span>周一至周日: 8:00-20:00</span>
+                        <span>官方二维码</span>
+                        <div class="bottom_left_img">
+                            <img src="../img/二维码.png">
+                        </div>
+                    </div>
+                    <div class="bottom_top_right">
+                        <ul>
+                            <li class="bottom_right_li">
+                                <a href="#">关于我们</a>
+                                <ul>
+                                    <li><a href="#">集团简介</a></li>
+                                    <li><a href="#">集团新闻</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                    <li><a href="#">社会责任</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom_right_li">
+                                <a href="#">解决方案</a>
+                                <ul>
+                                    <li><a href="#">面向用户</a></li>
+                                    <li><a href="#">面向高校</a></li>
+                                    <li><a href="#">面向高校</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom_right_li">
+                                <a href="#">服务</a>
+                                <ul>
+                                    <li><a href="#">服务范围</a></li>
+                                    <li><a href="#">服务案例</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom_right_li">
+                                <a href="#">媒体报道</a>
+                                <ul>
+                                    <li><a href="#">武昌首义学院与腾讯云、武汉厚溥共建腾讯云产业学院</a></li>
+                                    <li><a href="#">光谷2021上市“金种子”、“银种子”名单公布</a></li>
+                                    <li><a href="#">湖北省教投、湖北华策教投与厚溥合作签约仪式在汉举行</a></li>
+                                    <li><a href="#">光谷在线教育阵容为何越来越豪</a></li>
+                                    <li><a href="#">厚溥集团广西首家“商务大数据应用技术产业学院”在梧州职业学院揭牌</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom_middle">
+                    <p>
+                        <strong><img src="./img/inedximg/dizhi.png" alt=""></strong>
+                        <span>地址: 武汉市关山大道特1号光谷软件园D8</span>
+                    </p>
+                    <p>
+                        <strong><img src="./img/inedximg/youxiang.png" alt=""></strong>
+                        <span>邮箱: hopu@hopu.group</span>
+                    </p>
+                    <p>
+                        <strong><img src="./img/inedximg/wangzhi.png" alt=""></strong>
+                        <span>网址: http://hopu.group</span>
+                    </p>
+                </div>
+                <div class="bottom_bottom">
+                    <span>copyright @ 2020-2030 武汉厚溥数字科技有限公司ALL RIGHTS RESERVED.<i>鄂ICP备11005077号</i></span>
+                    <span>鄂网安备44030502002037号</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导入地图js 利用jquery 和 layer   利用vue插入数据-->
+    <script>
+        new Vue({
+            el: '#root',
+            data: {
+                left: '<',
+                right: '>'
+            }
+        })
+
+        // 地图1
+        function addMap0() {
+            layer.open({
+                type: 2,
+                title: '',
+                maxmin: false,
+                shadeClose: true,
+                area: ['1000px', '500px'],
+                content: './map/map.html'
+            });
+        }
+        function addMap1() {
+            layer.open({
+                type: 2,
+                title: '',
+                maxmin: false,
+                shadeClose: true,
+                area: ['1000px', '500px'],
+                content: './map/map1.html'
+            });
+        }
+        function addMap2() {
+            layer.open({
+                type: 2,
+                title: '',
+                maxmin: false,
+                shadeClose: true,
+                area: ['1000px', '500px'],
+                content: './map/map2.html'
+            });
+        }
+        function addMap3() {
+            layer.open({
+                type: 2,
+                title: '',
+                maxmin: false,
+                shadeClose: true,
+                area: ['1000px', '500px'],
+                content: './map/map3.html'
+            });
+        }
+
+    </script>
+</body>
+
+</html>

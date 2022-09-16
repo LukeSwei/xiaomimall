@@ -94,9 +94,34 @@
     width: 100%;
     height: 46px;
 }
+
 .bottom_word{
     color: #6f6f6f;
     font-size: 12px;
+}
+.bottom_word>p{
+    position: relative;
+    height: 24px;
+}
+.bottom_word>p>strong{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 3px;
+}
+.bottom_word>p>strong>img{
+    width: 13px;
+    position: absolute;
+    bottom: 0;
+}
+.bottom_word>p>span{
+    font-size: 14px;
+    line-height: 24px;
+    vertical-align: bottom;
+    position: absolute;
+    left: 24px;
 }
 .bottom_one{
     width: 8%;

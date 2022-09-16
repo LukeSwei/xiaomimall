@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.top {
+    margin: auto;
+    width: 1820px;
+    height: 140px;
+    /* border: solid 1px; */
+}
+
+.logo {
+    /* border: solid 1px; */
+    width: 570px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.logo>img {
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.nav {
+    /* border: solid 1px; */
+    width: 850px;
+    float: left;
+    margin-left: 135px;
+    height: 100%;
+}
+
+.nav li {
+    /* border: solid 1px; */
+    margin: 0 30px;
+    float: left;
+    height: 100%;
+}
+
+.nav li a {
+    line-height: 160px;
+    color: #333;
+    font-size: 15px;
+}
