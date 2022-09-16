@@ -16,8 +16,8 @@
   <!-- 头部导航文字 -->
   <ul class="head_title">
     <li><a href="first.html">首页</a></li>
-    <li><a href="###">新闻</a></li>
-    <li><a href="###">合作伙伴</a></li>
+    <li><a href="news">新闻</a></li>
+    <li><a href="Partners">合作伙伴</a></li>
     <li><a href="solution.html">解决方案</a></li>
     <li><a href="society.html">社会责任</a></li>
     <li><a href="contact.html">联系方式</a></li>
@@ -28,12 +28,12 @@
 
 <div id="container">
   <span>解决方案 ></span>
-  <a href="solution_learn.html"   target="solution">面向学习者</a>
-  <a href="solution_school.html"  target="solution">面向院校</a>
-  <a href="solution_company.html" target="solution">面向企业</a>
+  <a href="solution_learn.html"   target="solution" class="jump">面向学习者</a>
+  <a href="solution_school.html"  target="solution" class="jump">面向院校</a>
+  <a href="solution_company.html" target="solution" class="jump">面向企业</a>
   <hr style="margin:0 auto;width: 88%;">
 
-  <iframe src="solution_company.html" id="iframe" name="solution">
+  <iframe src="solution_learn.html" id="iframe" name="solution">
 
   </iframe>
 </div>
@@ -118,5 +118,17 @@
     </div>
   </div>
 </div>
+
 </body>
+<script>
+  var jump = document.getElementsByClassName('jump');
+  // var flag = 1;
+  // jump[0].onclick() = function(){
+  //   flag = 0;
+  // }
+  // if(!flag){
+  //   console.log(1)
+  // }
+  console.log(jump);
+</script>
 </html>

@@ -4,7 +4,130 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    .top{
+        height: 370px;
+    }
+    .top>div{
+        float: left;
+        width: 400px;
+    }
+    .top>div>div:nth-child(1){
+        font-size: 48px;
+        color: #f2f3f4;
+        font-family: 华文细黑;
+        margin-bottom: 20px;
+    }
+    .top>div>div:nth-child(2){
+        font-size: 18px;
+        display: inline-block;
+        font-weight: 700;
+        color: #112342;
+        margin-bottom: 26px;
+        border-left: 3px darkred solid;
+        padding-left: 10px;
+    }
+    .top>div>p{
+        color: #4b617b;
+        font-size: 15px;
+        line-height: 24px;
+        text-indent:30px;
+    }
+    .top>img{
+        float: right;
+        position: relative;
+    }
+    /*.footer{*/
+    /*    display: block;*/
+    /*    !*margin-top: 80px;*!*/
+    /*}*/
+    /*.footer>div{*/
+    /*    !*margin-right: 100px;*!*/
+    /*    margin-top: 200px;*/
+    /*    width: 500px;*/
+    /*    !*float: right;*!*/
+    /*}*/
+    .footer>div>p:nth-child(1){
+        font-size: 18px;
+        display: inline-block;
+        font-weight: 700;
+        color: #112342;
+        margin-bottom: 26px;
+        border-left: 3px darkred solid;
+        padding-left: 10px;
+        margin-top: 100px;
+    }
+    .footer>div>p:nth-child(2){
+        color: #4b617b;
+        font-size: 14px;
+        line-height: 24px;
+        text-indent:30px;
+    }
+    #recommend>ul>li{
+        float: left;
+        list-style: none;
+        margin:30px 140px;
+    }
+    #recommend>ul>li>span{
+        font-size: 28px;
+        font-weight: 700;
+        color: #761818;
+    }
+    #recommend>ul>li>p{
+        font-size: 14px;
+        color: #112342;
+    }
+    #recommend>ul>li>img{
+        vertical-align: top;
+    }
+</style>
 <body>
-hello
+<div class="top">
+    <div>
+        <div>FOR&nbsp;LEARNERS</div>
+        <div>以学习者为中心的成长体系</div>
+        <p>为学习者提供线上线下—站式解决方案，通过MBTI职业天赋测评、技术能力测评等智能绘制用户能力模型，
+            精准定位用户当前位置，结合用户预设目标，推荐最佳提升路线，线上线下深度融合形成学习闭环，
+            采用问题牵引、项目驱动的学习模式，提供成长、就业、晋升全生涯服务
+        </p>
+    </div>
+    <img src="./img/1.9d0bd1a0.png" alt="">
+    <p style="font-size: 18px;
+        display: inline-block;
+        font-weight: 700;
+        color: #112342;
+        margin-top: 98px;
+        border-left: 3px darkred solid;
+        padding-left: 10px;">就业推荐</p>
+    <div style="background-color: #ebeaec;height: 157px;width: 1320px" id="recommend">
+        <ul>
+            <li>
+                <img src="./img/下载.png" alt="">
+                <span>30</span>
+                <span style="vertical-align: super;font-size: 20px">+</span>
+                <p>专业HR</p>
+            </li>
+            <li>
+                <img src="./img/下载%20(1).png" alt="">
+                <span>60000</span>
+                <span style="vertical-align: super;font-size: 20px">+</span>
+                <p>合作企业</p>
+            </li>
+            <li>
+                <img src="./img/下载%20(2).png" alt="">
+                <span>80000</span>
+                <span style="vertical-align: super;font-size: 20px">+</span>
+                <p>就业学员</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    <div>
+        <p>学历提升</p>
+        <p>与国内外知名高校合作，支持全日制脱产、半脱产或函授等学习方式，以成人高考、远程网络教育等形式获取研究生、本科、专科学历。</p>
+    </div>
+</div>
 </body>
 </html>

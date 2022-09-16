@@ -5,155 +5,209 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <base href="/">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/head.css">
+    <script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=ENyn9gEejo4PFgYpjl6BiuCIZb8B5pI5"></script>
 </head>
 <body>
-    <!-- 头部导航栏 -->
-    <div class="head_top">
-         <!-- 头部图片 -->
-        <div class="head_img"><img src="./img/厚浦it.png"></div>
-       <!-- 头部导航文字 -->
-        <ul class="head_title">
-            <li><a href="first.html">首页</a></li>
-            <li><a href="###">新闻</a></li>
-            <li><a href="###">合作伙伴</a></li>
-            <li><a href="###">解决方案</a></li>
-            <li><a href="society.html">社会责任</a></li>
-            <li><a href="###">联系方式</a></li>
-            <li><a href="###">简/繁/EN</a></li>
-        </ul>
-    </div>
+<!-- 头部导航栏 -->
+<div class="head_top">
+    <!-- 头部图片 -->
+    <div class="head_img"><img src="./img/厚浦it.png"></div>
+    <!-- 头部导航文字 -->
+    <ul class="head_title">
+        <li><a href="first.html">首页</a></li>
+        <li><a href="news">新闻</a></li>
+        <li><a href="Partners">合作伙伴</a></li>
+        <li><a href="solution.html">解决方案</a></li>
+        <li><a href="society.html">社会责任</a></li>
+        <li><a href="contact.html">联系方式</a></li>
+        <li><a href="###">简/繁/EN</a></li>
+    </ul>
+</div>
 
-    <div style="text-align: center;margin-top: -30px;"><img src="./img/2.png" alt="" ></div>
-    
-    <div id="content" class="">
-        <span>联系方式</span>
-        <hr style="margin:0 auto;width: 88%;">
-        <div style=" 
+<div style="text-align: center;margin-top: -30px;"><img src="./img/2.png" alt=""></div>
+
+<div id="content" class="">
+    <span>联系方式</span>
+    <hr style="margin:0 auto;width: 88%;">
+    <div style="
             /* margin-top: 30px; */
             float: right;
             width: 1px;
             height: 500px;
             background: darkgray;
             margin-right: 32%">
-        </div> 
-        
-        <div id="map">
-            <div id="map_position">
-                <span>湖北·武汉</span>
-                <div>
-                    <img src="./img/footer-3.a59ae0a2.png" alt="" >
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">洪山区关山大道特1号光谷软件园D8栋</a>
-                </div>
-                <div>
-                    <img src="./img/footer-3.a59ae0a2.png" alt="" >
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">洪山区关山大道特1号光谷软件园D8栋</a>
-                </div>
-                <hr style="float:left; width: 90%;margin-top: 70px;color: gray;">
-            </div>
-           
-             <div id="map_position">
-                <span>江苏·扬州</span>
-                <div>
-                    <img src="./img/footer-3.a59ae0a2.png" alt="" >
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">江都区龙城路174号</a>
-                </div>
-                <hr style="float:left; width: 90%;margin-top: 70px;color: gray;">
-            </div>
+    </div>
 
-            <div id="map_position">
-                <span>陕西·西安</span>
-                <div>
-                    <img src="./img/footer-3.a59ae0a2.png" alt="" >
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">高新区国家教学数字出版基地B栋404、405室</a>
-                </div>
+    <div id="map">
+        <div id="map_position">
+            <span>湖北·武汉</span>
+            <div onclick="displayMap1()">
+                <img src="./img/footer-3.a59ae0a2.png" alt="">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:void(0)" id="guanggu">洪山区关山大道特1号光谷软件园D8栋</a>
             </div>
+            <div onclick="displayMap2()">
+                <img src="./img/footer-3.a59ae0a2.png" alt="">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:void(0)" id="huashan">洪山区花山软件新城二期B13</a>
+            </div>
+            <hr style="float:left; width: 90%;margin-top: 70px;color: gray;">
         </div>
 
-    </div>   
-    
-    <div class="last_buttom">
-        <div class="bottom_left"></div>
-        <!-- 底部二维码部分 -->
-        <div class="bottom_logo">
-            <!-- 空白部分 -->
-            <div class="little_top"></div>
-            <!-- qq邮箱 -->
-            <div class="little_qq">
-                <div class="qq_com">
-                   <p> 314215774@qq.com</p>
-                </div>
-                <p>周一至周日：8:00-20:00</p>
-                <p>官方二维码</p>
+        <div id="map_position">
+            <span>江苏·扬州</span>
+            <div onclick="displayMap3()">
+                <img src="./img/footer-3.a59ae0a2.png" alt="">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:void(0)">江都区龙城路174号</a>
             </div>
+            <hr style="float:left; width: 90%;margin-top: 70px;color: gray;">
+        </div>
 
-            <div class="erweima">
-           <!-- 二维码 -->
+        <div id="map_position">
+            <span>陕西·西安</span>
+            <div onclick="displayMap4()">
+                <img src="./img/footer-3.a59ae0a2.png" alt="">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:void(0)">高新区国家教学数字出版基地B栋404、405室</a>
             </div>
-            <div class="bottom_none">
-            </div>
-            <div class="bottom_word">
-            <p>地址：武汉市关山大道特1号光谷软件园D8</p>
-            <p>邮箱：hopu@hopu.group</p>
-            <p>    网址：http://hopu.group</p>
-            </div>
-        </div>
-        <div class="bottom_one">
-            <div class="little_top"></div>
-            <div class="word_com">
-                <p>关于我们</p>
-             </div>
-             <div class="words_com"> 
-                <p>集团简介</p>
-                <p>集团新闻</p>
-                <p>联系我们</p>
-                <p>社会责任</p>
-             </div>
-        </div>
-        <div class="bottom_two"> 
-            <div class="little_top"></div>
-            <div class="word_com">
-                <p>解决方案</p>
-             </div>
-             <div class="words_com"> 
-                <p>面向用户</p>
-                <p>面向高校</p>
-                <p>面向企业</p>
-             </div>   
-        </div>
-        <div class="bottom_there">
-            <div class="little_top"></div>
-            <div class="word_com">
-                <p>服务</p>
-             </div>
-             <div class="words_com"> 
-                <p>服务范围</p>
-                <p>服务案例</p>
-             </div>  
-        </div>
-        <div class="bottom_four">
-            <div class="little_top"></div>
-            <div class="word_com">
-                <p>媒体报道</p>
-             </div>
-             <div class="words_com"> 
-                <p> 武昌首义学院与腾讯云、武汉厚溥共建腾讯云产业学院 </p>
-                <p> 光谷2021上市“金种子”、“银种子”名单公布 </p>
-                <p> 湖北省教投、湖北华策教投与厚溥合作签约仪式在汉举行 </p>
-                <p> 光谷在线教育阵容为何越来越豪 </p>
-                <p> 厚溥集团广西首家“商务大数据应用技术产业学院”在梧州职业学院揭牌 </p>
-             </div>  
-        </div>
-        <div class="bottom_white">
-        </div>
-        <div class="bottom_only">
-         <p>copyright @ 2020-2030 武汉厚溥数字科技有限公司ALL RIGHTS RESERVED.鄂ICP备11005077号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鄂网安备44030502002037号</p>
         </div>
     </div>
+</div>
+
+<!-- <div id="top" style="display: block;bottom: ">
+
+</div> -->
+
+<div class="last_buttom">
+    <div class="bottom_left"></div>
+    <!-- 底部二维码部分 -->
+    <div class="bottom_logo">
+        <!-- 空白部分 -->
+        <div class="little_top"></div>
+        <!-- qq邮箱 -->
+        <div class="little_qq">
+            <div class="qq_com">
+                <p> 314215774@qq.com</p>
+            </div>
+            <p>周一至周日：8:00-20:00</p>
+            <p>官方二维码</p>
+        </div>
+
+        <div class="erweima">
+            <!-- 二维码 -->
+        </div>
+        <div class="bottom_none">
+        </div>
+        <div class="bottom_word">
+            <p>地址：武汉市关山大道特1号光谷软件园D8</p>
+            <p>邮箱：hopu@hopu.group</p>
+            <p> 网址：http://hopu.group</p>
+        </div>
+    </div>
+    <div class="bottom_one">
+        <div class="little_top"></div>
+        <div class="word_com">
+            <p>关于我们</p>
+        </div>
+        <div class="words_com">
+            <p>集团简介</p>
+            <p>集团新闻</p>
+            <p>联系我们</p>
+            <p>社会责任</p>
+        </div>
+    </div>
+    <div class="bottom_two">
+        <div class="little_top"></div>
+        <div class="word_com">
+            <p>解决方案</p>
+        </div>
+        <div class="words_com">
+            <p>面向用户</p>
+            <p>面向高校</p>
+            <p>面向企业</p>
+        </div>
+    </div>
+    <div class="bottom_there">
+        <div class="little_top"></div>
+        <div class="word_com">
+            <p>服务</p>
+        </div>
+        <div class="words_com">
+            <p>服务范围</p>
+            <p>服务案例</p>
+        </div>
+    </div>
+    <div class="bottom_four">
+        <div class="little_top"></div>
+        <div class="word_com">
+            <p>媒体报道</p>
+        </div>
+        <div class="words_com">
+            <p> 武昌首义学院与腾讯云、武汉厚溥共建腾讯云产业学院 </p>
+            <p> 光谷2021上市“金种子”、“银种子”名单公布 </p>
+            <p> 湖北省教投、湖北华策教投与厚溥合作签约仪式在汉举行 </p>
+            <p> 光谷在线教育阵容为何越来越豪 </p>
+            <p> 厚溥集团广西首家“商务大数据应用技术产业学院”在梧州职业学院揭牌 </p>
+        </div>
+    </div>
+    <div class="bottom_white">
+    </div>
+    <div class="bottom_only">
+        <p>copyright @ 2020-2030 武汉厚溥数字科技有限公司ALL RIGHTS RESERVED.鄂ICP备11005077号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鄂网安备44030502002037号</p>
+    </div>
+</div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/layui/2.7.6/layui.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    // var guanggu = document.getElementById('guanggu');
+    function displayMap1(){
+        layer.open({
+            type:2,
+            title: '',
+            maxmin: false,
+            shadeClose: true,
+            area: ['1000px','500px'],
+            content: './map/map1.html'
+        });
+    }
+
+     function displayMap2(){
+        layer.open({
+            type:2,
+            title: '',
+            maxmin: false,
+            shadeClose: true,
+            area: ['1000px','500px'],
+            content: './map/map2.html'
+        });
+    }
+
+    function displayMap3(){
+        layer.open({
+            type:2,
+            title: '',
+            maxmin: false,
+            shadeClose: true,
+            area: ['1000px','500px'],
+            content: './map/map3.html'
+        });
+    }
+
+    function displayMap4(){
+        layer.open({
+            type:2,
+            title: '',
+            maxmin: false,
+            shadeClose: true,
+            area: ['1000px','500px'],
+            content: './map/map4.html'
+        });
+    }
+
+</script>
 </html>

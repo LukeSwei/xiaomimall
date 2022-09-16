@@ -2,9 +2,187 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>面向公司</title>
 </head>
+<style>
+    .top{
+        height: 370px;
+    }
+    .top>div{
+        float: left;
+        width: 400px;
+    }
+    .top>div>div:nth-child(1){
+        font-size: 48px;
+        color: #f2f3f4;
+        font-family: 华文细黑;
+        margin-bottom: 20px;
+    }
+    .top>div>div:nth-child(2){
+        font-size: 18px;
+        display: inline-block;
+        font-weight: 700;
+        color: #112342;
+        margin-bottom: 10px;
+        border-left: 3px darkred solid;
+        padding-left: 10px;
+    }
+    .ziti{
+        font-size: 18px;
+        display: inline-block;
+        font-weight: 700;
+        color: #112342;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        border-left: 3px darkred solid;
+        padding-left: 10px;
+    }
+    .top>div>p{
+        color: #4b617b;
+        font-size: 14px;
+        line-height: 24px;
+        text-indent:30px;
+    }
+    .top>img{
+        float: right;
+    }
+    .footer{
+        display: block;
+    }
+    .footer>div{
+        /*margin-right: 100px;*/
+        margin-top: 80px;
+        width: 500px;
+        float: right;
+    }
+    .footer>div>p:nth-child(1){
+        font-size: 18px;
+        display: inline-block;
+        font-weight: 700;
+        color: #112342;
+        margin-bottom: 26px;
+        border-left: 3px darkred solid;
+        padding-left: 10px;
+    }
+    .footer>div>p:nth-child(2){
+        color: #4b617b;
+        font-size: 14px;
+        line-height: 24px;
+        text-indent:30px;
+    }
+    .footer>div{
+        height: 141px;
+        background-color: #f7f6f7;
+        display: flex;
+        margin-bottom: 80px;
+        width: 100%;
+    }
+    .tg>p{
+        width: 40px;
+        height: 42px;
+        font-family: STXihei;
+        font-size: 18px;
+        font-weight: 700;
+        font-stretch: normal;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #112342;
+        margin: 0;
+        margin-right: 33px;
+        border-left: 3px darkred solid;
+        margin-left: 100px;
+        padding-left: 20px;
+        margin-top: 40px;
+    }
+    .text{
+        width: 300px;
+        height: 42px;
+        margin-top: 40px;
+    }
+    .text>p{
+        margin: 0;
+        width: 300px;
+        font-family: STXihei;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0;
+        color: #4b617b;
+    }
+    .bottom{
+        width: 100%;
+    }
+    .box{
+        width: 770px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .box>ul{
+        height: 180px;
+        padding-right: 60px;
+    }
+    .box>ul>p{
+        font-family: STXihei;
+        font-size: 18px;
+        font-weight: 700;
+        font-stretch: normal;
+        letter-spacing: 0;
+        color: #112342;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .box>ul>li{
+        font-family: STXihei;
+        font-size: 14px;
+        font-weight: 400;
+        font-stretch: normal;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #4b617b;
+        width: 200px;
+        list-style: none;
+    }
+</style>
 <body>
+<div class="top">
+    <div>
+        <div>FOR&nbsp;COLLEGES</div>
+        <div>国际合作办学</div>
+        <p>开拓及对接优化国际教育资源，为高校提供国际化合作办学的一体化解决方案。
+        </p>
+        <div class="ziti">混合所有制办学</div>
+        <p>依托丰富的行业资源，系统的产品及服务，为院校提供混合所有制合作办学的一体化的解决方案。
+        </p>
+    </div>
+    <img src="./img/solution-school.png" alt="">
+</div>
 
+<div class="footer">
+    <div>
+        <div class="tg">
+            <p>院校托管</p>
+        </div>
+        <div class="text">
+            <p>依托系统的教育产品及服务运营体系。</p>
+            <p>为院系提供整体托管运营一体化办学解决方案。</p>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="box">
+        <ul>
+            <p>校企合作</p>
+            <li>携手高校，建设IT教育生态链，助力IT教育供给侧改革，为高校提供教学实验设备、师资培训和认证等整体解决方案。</li>
+        </ul>
+        <ul>
+            <p>图书出版</p>
+            <li>独立及联合出版IT类著作教程等</li>
+        </ul>
+        <ul>
+            <p>智慧教育AI解决方案</p>
+            <li>使用厚薄智慧教育AI解决方案，学校能随时掌握学生学习行为轨迹,AI智能预警学生学习状态，随时了解学生的就业预期及能力成长数据，多终端实时跟踪学生学习就业的成长路径。</li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>

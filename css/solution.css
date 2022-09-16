@@ -12,16 +12,19 @@
     margin-left: 22%;;
 }
 #container>a{
-    border-bottom: 2px solid red;
+    /* border-bottom: 2px solid #761818; */
     line-height: 60px;
     display: inline-block;
     margin : 0 20px;
-    font-size: 18px;
+    /* font-size: 18px; */
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
 }
 #iframe{
     display: block;
     margin:40px auto;
-    /*border: 0;*/
+    border: 0;
     width: 70%;
     height: 900px;
 }
