@@ -1,0 +1,133 @@
+#bottom{
+    width: 100%;
+    height: 434px;
+    font-size: 10px;
+    background: #222;
+    color: #6f6f6f;
+    padding-top: 50px;
+    position: relative;
+}
+.bottom_container{
+    width: 1230px;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+}
+.bottom_top{
+    display: flex;
+}
+.bottom_top_left{
+    flex: 3;
+    /* border: white 1px solid; */
+}
+.bottom_top_left>p{
+    font-size: 24px;
+    color: #fff;
+}
+.bottom_top_left>span{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    /* border:  white 1px solid; */
+}
+.bottom_top_right{
+    -webkit-box-flex: 8;
+    flex: 8;
+    /* border: 1px solid white; */
+}
+.bottom_left_img{
+    width: 148px;
+    height: 148px;
+    background: #fff;
+    margin-top: 10px;
+}
+.bottom_left_img>img{
+    width: 132px;
+    margin: 8px;
+}
+.bottom_top_right>ul{
+    display: flex;
+}
+.bottom_right_li{
+    -webkit-box-flex: 1;
+    flex: 1;
+    color: #fff;
+    font-size: 16px;
+    list-style: none;
+}
+.bottom_right_li:nth-child(4){
+    -webkit-box-flex: 4;
+    flex: 4;
+    color: #fff;
+    font-size: 16px;
+    list-style: none;
+}
+.bottom_right_li>a{
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+    color: inherit;
+}
+.bottom_right_li>ul{
+    list-style: none;
+}
+.bottom_right_li>ul>li{
+    cursor: pointer;
+}
+.bottom_right_li>ul>li>a{
+    color: #6f6f6f;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    margin: 0px;
+}
+.bottom_middle{
+    margin-top: 40px;
+}
+.bottom_middle>p{
+    position: relative;
+    height: 24px;
+}
+.bottom_middle>p>strong{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 3px;
+}
+.bottom_middle>p>strong>img{
+    width: 13px;
+    position: absolute;
+    bottom: 0;
+}
+.bottom_middle>p>span{
+    font-size: 14px;
+    line-height: 24px;
+    vertical-align: bottom;
+    position: absolute;
+    left: 24px;
+}
+.bottom_bottom{
+    width: 886px;
+    margin: 0 auto;
+    height: 15px;
+    font-size: 15px;
+    padding-top: 33px;
+    position: relative;
+    /* border: 1px solid white; */
+}
+.bottom_bottom>span:nth-child(1){
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+}
+.bottom_bottom>span:nth-child(2){
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+}
+.bottom_bottom>span>i{
+    cursor: pointer;
+}
